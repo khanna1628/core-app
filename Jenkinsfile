@@ -9,10 +9,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                
-                chekout scm
-		// git branch: 'main', url: 'https://github.com/khanna1628/core-app.git'
-
+                   chekout scm
+		//  git branch: 'main', url: 'https://github.com/khanna1628/core-app.git'
                  sh "mvn -Dmaven.test.failure.ignore=true clean package"
 
                 
