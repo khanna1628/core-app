@@ -1,12 +1,13 @@
 pipeline {
     agent any
+
     tools {
        
         maven "maven-3.8.4"
     }
 
     stages {
-        stage('Build') 
+        stage('Build') {
             steps {
                   checkout scm
 	        // git branch: 'main', url: 'https://github.com/khanna1628/core-app.git'
@@ -22,7 +23,6 @@ pipeline {
                 }
             }
         }
-		
     }
 }
 
