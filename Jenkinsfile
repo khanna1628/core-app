@@ -23,6 +23,14 @@ pipeline {
                 }
             }
         }
+	    
+	    stages {
+        stage('Build') {
+            steps {
+                  echo "deployment stage started"
+                
+            }
+	}
     }
 }
 
