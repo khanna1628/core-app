@@ -24,20 +24,7 @@ pipeline {
             }
         }
 	
-	stage('deploy') {
-            steps {
-                  echo "deployment stage started"
-                
-            }
-
-            }
-	stage('test') {
-            steps {
-                  echo "test starge"
-                
-            }
-
-            }
+	
     }
 }
 
